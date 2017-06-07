@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/my.js"></script>
+		<!--<script type="text/javascript">  
+			function jsonpCallback(result) {  
+				alert(result.length)
+				alert(result[0].length);
+			}  
+		</script>  
+		<script type="text/javascript" src="http://127.0.0.1/index.php?page=0&callback=jsonpCallback"></script>  -->
+	<style type="text/css">
+			.content{margin: 0 auto;width:80%;padding-left:10px;padding-right:10px;position: relative;background-color:rgba(242,208,208,0.5);min-height: 600px;}
+			.content img{float:left;width:300px;height:300px}
+			.content h1{text-align: center;font-size: 48px;}
+			.content p{line-height:40px;text-indent: 32px;font-size: 20px;}
+			.subtype{width:80%;height: auto;margin: 0 auto;background-color: #ccc;}
+			.subtype li{background-color: black; color: deepskyblue;margin: 5px}
+			.subtype li:hover{cursor: pointer;}
+			.subtype *{display: inline-block;list-style: none;}
+			#viewnow{background-color: deepskyblue;color: black;}
+	</style>
+</head>
+
+<body style="background:#eee">
+	<header>
+		<!--导航栏-->
+		<nav id="con1" class="navbar navbar-inverse header">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						aria-expanded="false">
+			        <span class="sr-only"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+					<a class="navbar-brand" href="#"><span><img src="img/97A58PIC6Uh.jpg" alt="logo" /></span></a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbb" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">Welcome</a></li>
+						<li class="active"><a href="index2.html">首页</a></li>
+						<li><a href="moutain.html">山水卷</a></li>
+						<li><a href="flower.html">花鸟卷</a></li>
+						<li><a href="people.html">人物卷</a></li>
+						<li><a href="#">关于我们</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+			<!--marquee-->
+			<marquee id="marq" onMouseOut="this.start()" onMouseOver="this.stop()" scrollamount="2" direction="left" width="100%" height="30px"loop="true">
+				中国山水画较之西方风景画，起码早了1000余年。它所呈相的图义，实际上是一部中国思想史。 早在7000多年以前，先古的觉醒便以图案方式纪录下来。新石器的河姆渡文化，已用线刻表达着观念性文化的内涵， 定居的农耕文明起源，不仅让人认知了工具美，亦让人于器之上认知了形上美。艺术不但是一种征服自然的想象，
+				还是一种征服自然想象的象征。先古与自然一开始便用艺术的方式对活，逻辑的发现与艺术的鉴赏推演着人们的双眼， 让一个天人合一的中国图式由混顿而至清晰。自仰韶文化起，人与自然的关系便具有了象征性。在几何装饰的手法中， 对称、运动等构成概念己明显地运用于时空的表现之中。特别让人感动的是《稷神崇拜图》。在以农立国的背景上，
+				祭祀稷神一直成风。而这幅图中的禾、田、人的关系传达了先祖对生命意义的一种素朴理解。在沉淀了人与动物、 植物的自然关系认知的基础上，社会意识又成为最为关键的文明起源。沧源文化的《村落图》， 用岩画形式记述了人类对农耕定居的“家”的理解。这幅画最有视觉趣味的是以村落为中心的道路关联，
+				以及押俘、赶畜、祭天、跳神等场面围绕正面中心的梯度延深，平面中的深度己在这幅画中得到有力的体现。 人与自然的关系，人与社会的关系，就这样伴随着艺术的看，不断地深化与发展。
+			</marquee>
+		</nav>
+	</header>
+	<div class="subtype">
+		<ul>
+			<h3 class="btn-success"><a href="index2.html">首页</a>&gt;历代山水画名家&gt;</h3>
+			<li>展子虔</li>	<li>李思训</li>	<li>李昭道<li>
+			<li>王 维<li>	<li>关 仝<li>	<li>荆 浩<li>
+			<li>巨 然<li>	<li>郭 熙<li>	<li>李 成<li>
+			<li id="viewnow">米 芾<li>	<li>王希孟<li>	<li>张择端<li>
+			<li>范 宽<li>	<li>马 远<li>	<li>夏 圭<li>
+			<li>李 唐<li>	<li>刘松年<li>  <li>王 蒙<li><li>
+			<li>倪 瓒<li>	<li>赵孟頫<li>	<li>黄公望<li>
+			<li>仇英<li>	<li>查士标<li>	<li>唐 寅<li>
+			<li>文徵明<li>	<li>董其昌<li>	<li>朱耷<li>
+			<li>龚贤<li>	<li>梅清<li>	<li>石 涛<li>
+			<li>王 翚<li>	<li>王时敏<li>	<li>吴石仙<li>
+			<li>萧云从<li>	<li>王原祁<li>	<li>吴 历<li>
+		</ul>
+	</div>
+	<div class="content" >
+		<h1>米芾</h1>
+			<h3>宋 米芾 《翠微深处图》</h3>
+		<p>		<img src="img/mifu.jpg">
+      (1051～1107)，中国北宋书法家，画家，书画理论家。初名黻，后改芾，字元章，号襄阳居士、海岳山人等。祖籍太原，后迁居湖北襄阳，长期居润州(今江苏镇江)。米芾的五世祖是宋初勋臣米信，高祖、曾祖以上多为武职官吏，其父名佐，字光辅，官至武卫将年。其母阎氏，曾为宋英宗赵曙皇后高氏的乳娘。曾任校书郎、书画博士、礼部员外郎。善诗，工书法，擅篆、隶、楷、行、草等书体，长于临摹古人书法，达到乱真程度。初师欧阳询、柳公权，字体紧结，笔画挺拔劲健，后转师王羲之 王献之，体势展拓，笔致浑厚爽劲，自谓“刷字”，与苏试、黄庭坚、蔡襄并称宋代四大书法家。其绘画擅长枯木竹石，尤工水墨山水。以书法中的点入画，用大笔触水墨表现烟云风雨变幻中的江南山水，人称米氏云山，富有创造性。米芾传世的书法墨迹有《向太后挽辞》、《蜀素帖》、《苕溪诗帖》、《拜中岳命帖》、《虹县诗卷》、《草书九帖》、《多景楼诗帖》等，无绘画作品传世。著《山林集》，已佚。其书画理论见于所著《书史》、《画史》、《宝章待访录》等书中。
+		</p>
+	</div>
+	<footer class="navbar-inverse container-fluid col-md-12">
+		<div align="center">
+			<span id="a1">联系我们</span>
+
+			<span id="a3"><a href="#" class="title">关注我们</a></span>
+			<span id="a4"><a href="http://weibo.com/u/5347796483?refer_flag=1001030102_&is_all=1">官方微博:@山水世家</a></span>
+			<span id="a5">官方QQ:959670036</span>
+			<span id="a6">官方微信:<img class="weixin" src="img/myweixin.png"></span>
+			<span id="a7"><i><img src="img/ft_logo.jpg"></i></span>
+		</div>
+		<div align="center">
+			<span id="a2">&copy;copyright 2016</span>
+		</div>
+	</footer>
+</body>
+</html>

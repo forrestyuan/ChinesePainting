@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body style="overflow: hidden;">
+		<!--背景更换区-->
+		<div><img id="changeimg" src="img/5106585_142206018163_2.jpg" alt="" /></div>
+		<!--导航栏-->
+		<nav class="navbar navbar-inverse">
+		  <div class="container-fluid">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span>山水世家</a>
+		    </div>
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav navbar-right">
+		        <li class="active"><a href="index.html">Welcome</a></li>
+		        <li><a href="index2.html">首页</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+			
+		<!-- 按钮触发模态框 -->
+		<button style="position: absolute; bottom: 10%;right: 10%;" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">查看倒计时</button>
+		<!--封面-->
+		<div class="gobig">
+			<a data-toggle="tooltip" data-placement="bottom" title="点击进入分类页面！" href="index2.html">
+				<img src="img/thumb.jpg" alt="FirstPage" />
+			</a>
+		</div>
+		<!--模态框主体 (倒计时模块)-->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		   <div class="modal-dialog">
+		      <div class="modal-content">
+		         <div class="modal-header">
+		            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">X</button>
+		            <h3 class="modal-title" id="myModalLabel">提示:
+		            	<h1>距离:&nbsp; 
+		            		<span id="setYear">2017</span>年
+		            		<span id="setMonth">10</span>月
+		            		<span id="setDay">10</span>日
+		            		<span id="setHM">00:00</span>&nbsp;还有：
+		            	</h1>
+		            </h3>
+		         </div>
+		         <div class="modal-body">
+		         	<div class="navbar-inverse">
+		         		<h1 style="text-align: center;font-family: '微软雅黑'; color: deepskyblue;">
+		         			<span id="placeLeftTimeDay">100</span>&nbsp;天<hr/>
+		         			<span id="placeLeftTimeHour">5</span>&nbsp;时<hr/>
+		         			<span id="placeLeftTimeMinute">5</span>&nbsp;分<hr/>
+		         			<span id="placeLeftTimeSecond">5</span>&nbsp;秒<hr/>
+		         		</h1>
+		         	</div>
+		         </div>
+		         <div class="modal-footer">
+		            <span id="settingTime">
+		            	<input id="date" class="navbar-left input-sm" type="date"/>
+		            	<input id="time" class="navbar-left input-sm" type="time"/>
+		            	<button id="settingFinish" type="button" class="btn btn-success navbar-left">确定</button>
+		            	<button id="cancleSetting" type="button" class="btn btn-default navbar-left" >取消</button>
+		            </span>
+		         	<button id="resetTime" type="button" class="btn btn-danger">重设目标时间</button>
+		            <button type="button" class="btn btn-warning" data-dismiss="modal">关闭</button>
+		         	
+		         </div>
+		      </div><!-- /.modal-content -->
+		   </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<!--end:倒计时模块-->
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/my.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

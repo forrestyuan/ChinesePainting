@@ -1,0 +1,210 @@
+﻿/*----------------所有页面-------------*/
+html,body{height: 100%;}
+/*背景*/
+.img{width: 100%;height: 100%; position:fixed;z-index: -1;}
+.img img{width:100%;height: 100%;}
+a{text-decoration: none;color:black;}
+h3{font:bolder; color:#000;}
+p{line-height:2em; word-spacing: 25px;}
+/*--------------welcome页面 封面 出现动画------------*/
+@keyframes myfirst
+{
+	from {width: 0;height: 0;}
+	to {width: 100%;height: 100%;}
+}
+@-moz-keyframes myfirst /* Firefox */
+{
+	from {width: 0;height: 0;}
+	to {width: 100%;height:100%;}
+}
+@-webkit-keyframes myfirst /* Safari 和 Chrome */
+{
+	from {width: 0;height: 0;}
+	to {width: 100%;height: 100%;}
+}
+@-o-keyframes myfirst /* Opera */
+{
+	from {width: 0;height: 0;}
+	to {width: 100%;height:100%;}
+}
+.gobig{position: relative;width:50%;height:86%;margin: 0 auto;}
+.gobig img{position: absolute;display: inline-block;
+	animation:myfirst 8s;-moz-animation: myfirst 8s;-webkit-animation: myfirst 8s;-o-animation: myfirst 8s;
+	width: 100%;height:100%;margin: 0 auto;border:#fff solid 1px;}
+.gobig img:hover{cursor: pointer;box-shadow: 10px 10px 10px #3C3C3C;}
+
+/*轮播图*/
+#myCarousel{height:620px;}
+#myCarousel img{height:620px;width:2500px;}
+
+/*----------------------背景更换-----------------------*/
+#changeimg{position: absolute;z-index: -10000;width: 100%;height: 104%;}
+    
+/*----------------------secondhtml主页样式---------------*/
+#con{bottom:0; margin-top:50px}  							/*三幅图root元素样式*/
+#con1{margin-bottom:2em;border-radius:0;height: 52px;position: relative;z-index: 500;background-color: black;} 
+#con1 a.navbar-brand{padding:0px;border:solid white 1px;margin-left: 10px;}
+#con1 a img{height:30px;margin: 10px;}							/*导航栏样式*/
+.navbb *{background-color:black;color: deepskyblue;}
+.dif img{position:relative;z-index: 100;box-shadow: 2px 2px 2px 2px #222;}/*三幅图样式*/
+.dif img:hover{background-color:white;box-shadow: 4px 4px 6px 6px #222;}
+
+marquee{font-family:sans-serif arial;color: #000;font-size: 24px;background-color:#EEEEEE;}    /*文字跑马灯效果*/
+
+/*-----------------------脚部样式-------------------------*/
+footer{display: block;bottom:0;width: 100%;height:90px;margin-top:100px;}
+#a6 img{height:40px;width:40px;}              /*wechat*/
+#a7 img{height: 40px;width: 80px;}            /*商标*/
+footer img:hover{transition:all 2s ease-in;transform: scale(3,3) translateY(-50px);}
+footer span{color: #eee;display: inline-block;margin: 0 2% 0 2%;}
+footer span:hover{cursor: pointer;}
+#a2{font-size: 24px;}
+footer a{color:#eee}
+
+/*--------------------对脚部进行媒体查询--------------------*/
+@media only screen and (min-width:768px) and (max-width:1024px) {
+	#a6,#a7{display: none;}
+	#a1,#a2,#a3,#a4,#a5{margin: 0 1% 0 1%;};
+}
+@media only screen and (min-width: 1px) and (max-width: 768px) {
+		#a1,#a3,#a4,#a5,#a6,#a7{display: none;}
+		#moive_contain{display: none;}
+		#a2{width:40%;margin: 0 60% 0 30%;}
+		#myCarousel{height:400px;}
+		#myCarousel img{height:400px;}
+		
+}
+@media only screen and (min-width:600px) and (max-width:1000px){
+	      #myCarousel{height:400px;}
+		#myCarousel img{height:400px;}
+		
+	}
+	
+/*面包屑导航
+ */
+.mianbaoxue{
+	background-color:white;
+	color: #222222;
+	font-size: 18px;
+}
+.mianbaoxue a{color: black;}
+.mianbaoxue ul{
+	display: inline-block;
+	list-style: none;
+}
+.mianbaoxue li{
+	list-style: none;
+	display: inline-block;
+}
+.mianbaoxue li:last-child{
+	color:#1E90FF;
+}
+/*------------------------时间轴---------------------------*/
+.timeline { list-style-type: none;padding: 0 0 10px 0;position: relative;}
+.timeline .event { margin-bottom:20px; padding-right:0px; position: relative;}
+.timeline .thumb { background-repeat: no-repeat; border-radius: 50% 50% 50% 50%; border: solid 4px #ddd;
+					box-shadow:0 1px 1px rgba(200, 200, 200, 0.5); height: 100px; position: absolute; 
+				   transform: scale(0.8) translateX(24px); width: 100px; left:0; top:0;}
+.timeline .thumb span { bottom: -40px; color: #999; font-size: 15px; font-weight: 700;
+					   position: absolute; text-align: center; text-transform: uppercase; 
+					   width: 100%; left:0;}
+.timeline .inner { margin-left: 200px; perspective: 600px; position: relative; border-color: #F26328;
+				   background:#fff; padding:20px; text-align:left;}
+.timeline .inner:before { border-bottom: 20px solid transparent;border-top: 20px solid transparent;
+						  border-right: 20px solid #fff; content: "";display: inline-block;
+						  top: 37px;position: absolute;left: -20px;}
+.inner:hover{box-shadow: 3px 3px 3px #C0C0C0;color:dodgerblue;}
+.inner p{text-indent: 2em;}
+.timeline label{ display: block; height: 24px; left: 152px; position: absolute; top: 36px; width: 24px; 
+				 border-radius: 50% 50% 50% 50%; color: #41838E; font-size: 26px;  border:#ddd solid 4px; }
+.timeline .event:hover label{ border:dodgerblue solid 4px; }
+
+/*--------------------朝代快车样式------------------------------*/
+.chaodai{border: 0 1px 0 1px solid; box-shadow: 3px 3px 3px #CCCCCC;}
+.chaodai span{font-size: 20px;padding-top:1% ;text-align: center;border-radius:180px ;display:inline-block;
+			   width:10%;height:55px;border-right:1px solid #000;margin:5px 0 10px 0;	}
+.chaodai span:hover{cursor: pointer;color: dodgerblue;background-color: #D5D5D5;
+					box-shadow: 2px 2px 2px #8C8C8C;}
+@media only screen and (min-width: 1px) and (max-width: 500px) {		.timeline .thumb{display:none;}
+		 #myCarousel{height:300px;}
+		#myCarousel img{height:300px;}
+		.timeline .inner{margin:0;left:0;}
+		.chaodai span{margin-left:30px;width:2em;height:3em;}
+	}
+/*-------------moive------------*/
+#moive{width: 40%;position:absolute;left: 300px;}
+#moive img{position: absolute;top: -265px;}
+#moive video{padding: 0;margin: 0;position:absolute;top:-250px;left:58px; box-shadow:5px 5px 2px #101010;}
+#moive{display:none;}
+.play{position:absolute;top:250px;left:300px;color:#CCCCCC;}
+#close{font-size: 20px;z-index: 10050;border: solid 1px red;display:inline-block;top: -225px;
+	   left:750px;cursor:pointer;background-color: rgba(255,255,0,0.5);display:none;}
+#close:hover{background-color: rgba(0,255,255,1);}
+
+/*--------回到顶部--------------------*/
+.totop{position: fixed;right: 10px;bottom:140px;z-index: 1000;display: none;} 
+.totop img{width: 50px;height: 70px;}
+
+.overlay{font-size:20px;background: rgba(190,190,190,1.0);text-align:center;height:35px;width:400px;margin:10px auto;clear:both;position:relative;}
+.overlay:hover{cursor:pointer;background-color:#222;color:deepskyblue;}
+
+
+/*隐藏滚动条*/
+::-webkit-scrollbar{width:0;}
+
+#dynasty{
+	position: absolute;
+	bottom: -15px;
+}
+
+/*屋檐*/
+
+.wapian{background-image: url(../img/wapian.jpg);background-repeat: repeat-x repeat-y;width:100%;height:15px;position: relative;}
+
+/*sub moive*/
+#sub-moive{text-align: center;background-color: rgba(180,180,200,0.5);border-bottom: solid 1px black;}
+
+/*倒计时*/
+#settingTime{display: none;}
+#setYear,#setDay,#setMonth,#setHM{color: red;}
+
+/*设置显示时间的容器和时间容器*/
+#picLunBo{position: relative;}
+#wrap_time{color:white;font-family: "微软雅黑"; font-size:20px;position: absolute;z-index: 500;width: 200px;height: 280px;border-radius:8px ; background-color:rgba(0,0,0,0.5);right:100px;top:100px;}
+#wordchange{font-family:"微软雅黑";position: absolute;top:5px;left:150px;z-index:1000;color: white;font-size:18px;}
+/*小卡片样式*/
+	.littletab{box-shadow: 0 5px 10px 0 rgba(0,0,0,0.1);border-radius:3px;margin-bottom:15px;background-color:white;overflow:hidden;padding:10px;height:220px;width:270px;float: left;position: relative;}
+	.littletab:hover{box-shadow: 2px 2px 2px 2px 4px #ccc;box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);}
+	.tabimg{width:250px;height: 130px;position: absolute;}
+	.hoverShow-wrap{position: relative;overflow: hidden;height:180px;width: 250px;}
+	.hoverShow{height:100px;text-align:center;bottom:-35px;transition:all 1s ease;overflow:hidden;position: absolute;width:250px;padding:0 20px 0 20px;background-color: white;color:#8C8C8C;font-family: "微软雅黑";}
+	.littletab:hover .hoverShow{transition: all 1s ease;color:black;bottom:5px;}
+	.littletabInfo{padding: 0 10px 0 10px;}
+	.littletabInfo span{color:#8C8C8C;font-size: 14px;}
+	.littletabInfo span:last-child{margin-right: 10px;}
+	
+/*广告*/
+		 .ad{position:absolute;font-size:25px;width:150px;height:300px;text-align:center;background-color:deepskyblue;z-index: 1000;}
+		 .ad>img{transition:all 2s ease-out;border-radius:100%}
+		 .ad>img:hover{transition:all 4s ease-out;duration:0.5s;transform:rotate(1440deg);};
+/*轮播导向图（可重用设计）*/
+	.slider-decoration{padding:0 50px 50px 50px;}
+	.wrap-slider{position: relative;border: solid white 2px;height: 450px;background-color: white;padding: 10px;}
+	.bgimg{position: absolute;width:99.5%;height: 420px;}
+	.bgimg *{display: inline-block;width:inherit;height:inherit;position: absolute;}
+	.bgimg a:nth-child(n+2){display: none;}
+	.preImg,.nextImg{display: inline-block;position: absolute;z-index: 400;background:rgba(0,0,0,0.5);color:white;width:60px;height: 60px;border-radius: 100px;text-align: center;padding-top:0.1em;font-size:40px;}
+	.preImg{left: 270px;top:45%;}
+	.nextImg{right:20px;top:45%;}
+	.nextImg:hover,.preImg:hover{cursor: pointer;background-color: rgba(0,0,0,0.7);color:deeppink;}
+	.classes-nav{position: absolute;z-index: 500;background-color: rgba(0,0,0,0.4);height: 420px;width:250px;}
+	.classes-nav *{list-style:none;color: white;font-family: "微软雅黑";font-size:18px;padding:0;}
+	.classes-nav ul{padding: 12px 15px 0 15px;}
+	.classes-nav li{text-align:center;border-bottom: solid 1px white;padding:15px;}
+	.classes-nav li:hover{cursor:pointer;background-color: rgba(0,0,0,0.3);}
+	.classes-nav li div{background-image:url(../img/data.png);overflow-y:scroll;display:none;position: absolute;left:230px;top:0px;width:750px;height:420px;}
+	.classes-nav li div *{display: inline-block;color: black;font-size:15px;text-align: left;}
+	.classes-nav li div h4{display: block;color: red;font-size: 16px;}
+	.classes-nav li div ul li{color:black;font-family: "微软雅黑";font-size: 16px;}
+	.classes-nav li div ul li:hover{color:deepskyblue;background-color: black;}
+	
