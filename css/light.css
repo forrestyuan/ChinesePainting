@@ -1,4 +1,7 @@
-﻿/*呼吸灯动画*/
+﻿/**
+*@author yfc
+*/
+/*呼吸灯动画*/
 @-webkit-keyframes 'breathingLight' {
         from {
                 background-color: #157402;
