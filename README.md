@@ -3,3 +3,4 @@
 xampp 集成环境 mysql, php 5.6, apache 
 mysql数据库的用户名和密码在这里默认是root 
 # 预览图
+![image](https://github.com/forrestyuan/ChinesePainting/blob/master/https___forrestyuan.github.io_ChinesePainting_inde.png?raw=true)
